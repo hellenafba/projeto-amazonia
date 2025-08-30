@@ -6,3 +6,22 @@ body{
     background-color: rgb(166, 128, 46);
 }
 
+.container {
+  display: flex;
+  flex-wrap: wrap; /* opcional para quebrar linha automaticamente */
+}
+
+.col-3{
+  flex: 1;
+  min-width: 200px; /* ou qualquer valor desejado */
+}
+
+/* Para telas menores */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .col-3 {
+    width: 100%;
+  }
+}
