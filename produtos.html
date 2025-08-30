@@ -32,86 +32,124 @@
             </div>
         </div>
     </nav>
-    <main class="container text-center">
-     
-      <div class="filtros">
-        <div class="categorias-cartas">
-          <label for="categoria">Categoria</label>
-          <select id="categoria" class="categoria">
-            <option value="">Selecione uma carta</option>
-            <option value="comum">Comum</option>
-            <option value="rara">Rara</option>
-            <option value="épica">Épica</option>
-          </select>
+    <main>
+      <div class="container py-5">
+    <h1 class="text-center mb-4">Artesanato Paraense</h1>
+
+    <div class="row gy-4">
+      
+      <!-- Produto 1 -->
+      <div class="col-sm-6 col-md-4">
+        <div class="card h-100" data-bs-toggle="modal" data-bs-target="#productModal"
+             data-title="Cesto de Tucumã"
+             data-price="R$ 85,00"
+             data-description="Cesto artesanal feito com fibras de tucumã, típico da região amazônica, utilizado para decoração e armazenamento."
+             data-img="https://via.placeholder.com/350x200?text=Cesto+de+Tucuma">
+          <img src="https://via.placeholder.com/350x200?text=Cesto+de+Tucuma" class="card-img-top" alt="Cesto de Tucumã" />
+          <div class="card-body text-center">
+            <h5 class="card-title">Cesto de Tucumã</h5>
+            <p class="card-text text-danger fs-5">R$ 85,00</p>
+          </div>
         </div>
-        <div class="preco-cartas">
-          <label for="preco">Preço máximo (R$)</label>
-          <input type="text" id="preco" class="preco" placeholder="Ex: 100" />
-        </div>
-        <button class="btn-filtrar">Aplicar filtros</button>
       </div>
-      <ul class="cartas">
-        <li class="carta" data-categoria="Épica" data-preco="3000">
-          <img src="./src/imagens/carta-arkanon.png" alt="" />
 
-          <div class="informacoes">
-            <h2 class="nome-personagem">Arkanon</h2>
-            <span class="categoria">Categoria: Épica</span>
-            <span class="preco">R$ 3.000,00</span>
-            <a href="http://wa.me/55519999999?text=Olá, quero comprar a carta Arkanon!" class="btn-comprar" target="_blank">Comprar</a>
+      <!-- Produto 2 -->
+      <div class="col-sm-6 col-md-4">
+        <div class="card h-100" data-bs-toggle="modal" data-bs-target="#productModal"
+             data-title="Máscara Marajoara"
+             data-price="R$ 120,00"
+             data-description="Máscara decorativa inspirada na cultura marajoara, pintada à mão com motivos indígenas."
+             data-img="https://via.placeholder.com/350x200?text=Máscara+Marajoara">
+          <img src="https://via.placeholder.com/350x200?text=Máscara+Marajoara" class="card-img-top" alt="Máscara Marajoara" />
+          <div class="card-body text-center">
+            <h5 class="card-title">Máscara Marajoara</h5>
+            <p class="card-text text-danger fs-5">R$ 120,00</p>
           </div>
-        </li>
+        </div>
+      </div>
 
-        <li class="carta" data-categoria="Épica" data-preco="4000">
-          <img src="./src/imagens/carta-lymara.png" alt="Carta Lymara" />
-          <div class="informacoes">
-            <h2 class="nome-personagem">Lymara</h2>
-            <span class="categoria">Categoria: Épica</span>
-            <span class="preco">R$ 4000,00</span>
-            <a href="http://wa.me/55519999999?text=Olá, quero comprar a carta Lymara!" class="btn-comprar" target="_blank">Comprar</a>
+      <!-- Produto 3 -->
+      <div class="col-sm-6 col-md-4">
+        <div class="card h-100" data-bs-toggle="modal" data-bs-target="#productModal"
+             data-title="Boneca de Pano"
+             data-price="R$ 60,00"
+             data-description="Boneca artesanal feita à mão com tecidos típicos da região Norte, ideal para colecionadores."
+             data-img="https://via.placeholder.com/350x200?text=Boneca+de+Pano">
+          <img src="https://via.placeholder.com/350x200?text=Boneca+de+Pano" class="card-img-top" alt="Boneca de Pano" />
+          <div class="card-body text-center">
+            <h5 class="card-title">Boneca de Pano</h5>
+            <p class="card-text text-danger fs-5">R$ 60,00</p>
           </div>
-        </li>
+        </div>
+      </div>
 
-        <li class="carta" data-categoria="Comum" data-preco="800">
-          <img src="./src/imagens/carta-kaelthar.png" alt="Carta Kaelthar" />
-          <div class="informacoes">
-            <h2 class="nome-personagem">Kaelthar</h2>
-            <span class="categoria">Categoria: Comum</span>
-            <span class="preco">R$ 800,00</span>
-            <a href="http://wa.me/55519999999?text=Olá, quero comprar a carta Kaelthar!" class="btn-comprar" target="_blank">Comprar</a>
+      <!-- Produto 4 -->
+      <div class="col-sm-6 col-md-4">
+        <div class="card h-100" data-bs-toggle="modal" data-bs-target="#productModal"
+             data-title="Panelas de Barro"
+             data-price="R$ 140,00"
+             data-description="Panelas artesanais de barro feitas por ceramistas locais, usadas para cozinhar e decorar."
+             data-img="https://via.placeholder.com/350x200?text=Panelas+de+Barro">
+          <img src="https://via.placeholder.com/350x200?text=Panelas+de+Barro" class="card-img-top" alt="Panelas de Barro" />
+          <div class="card-body text-center">
+            <h5 class="card-title">Panelas de Barro</h5>
+            <p class="card-text text-danger fs-5">R$ 140,00</p>
           </div>
-        </li>
+        </div>
+      </div>
 
-        <li class="carta" data-categoria="Rara" data-preco="1500">
-          <img src="./src/imagens/carta-maldrik.png" alt="Carta Maldrik" />
-          <div class="informacoes">
-            <h2 class="nome-personagem">Maldrik</h2>
-            <span class="categoria">Categoria: Rara</span>
-            <span class="preco">R$ 1500,00</span>
-            <a href="http://wa.me/55519999999?text=Olá, quero comprar a carta Maldrik!" class="btn-comprar" target="_blank">Comprar</a>
+      <!-- Produto 5 -->
+      <div class="col-sm-6 col-md-4">
+        <div class="card h-100" data-bs-toggle="modal" data-bs-target="#productModal"
+             data-title="Colar de sementes"
+             data-price="R$ 45,00"
+             data-description="Colar feito à mão com sementes naturais da Amazônia, símbolo da cultura indígena paraense."
+             data-img="https://via.placeholder.com/350x200?text=Colar+de+Sementes">
+          <img src="https://via.placeholder.com/350x200?text=Colar+de+Sementes" class="card-img-top" alt="Colar de sementes" />
+          <div class="card-body text-center">
+            <h5 class="card-title">Colar de sementes</h5>
+            <p class="card-text text-danger fs-5">R$ 45,00</p>
           </div>
-        </li>
+        </div>
+      </div>
 
-        <li class="carta" data-categoria="Comum" data-preco="600">
-          <img src="./src/imagens/carta-drahven.png" alt="Carta Drahven" />
-          <div class="informacoes">
-            <h2 class="nome-personagem">Drahven</h2>
-            <span class="categoria">Categoria: Comum</span>
-            <span class="preco">R$ 600,00</span>
-            <a href="http://wa.me/55519999999?text=Olá, quero comprar a carta Drahven!" class="btn-comprar" target="_blank">Comprar</a>
+      <!-- Produto 6 -->
+      <div class="col-sm-6 col-md-4">
+        <div class="card h-100" data-bs-toggle="modal" data-bs-target="#productModal"
+             data-title="Rede de Dormir"
+             data-price="R$ 90,00"
+             data-description="Rede de dormir artesanal, confeccionada com técnicas tradicionais para proporcionar conforto e resistência."
+             data-img="https://via.placeholder.com/350x200?text=Rede+de+Dormir">
+          <img src="https://via.placeholder.com/350x200?text=Rede+de+Dormir" class="card-img-top" alt="Rede de Dormir" />
+          <div class="card-body text-center">
+            <h5 class="card-title">Rede de Dormir</h5>
+            <p class="card-text text-danger fs-5">R$ 90,00</p>
           </div>
-        </li>
+        </div>
+      </div>
 
-        <li class="carta" data-categoria="Comum" data-preco="400">
-          <img src="./src/imagens/carta-nyxsombra.png" alt="Carta Nyxsombra" />
-          <div class="informacoes">
-            <h2 class="nome-personagem">Nyxsombra</h2>
-            <span class="categoria">Categoria: Comum</span>
-            <span class="preco">R$ 400,00</span>
-            <a href="http://wa.me/55519999999?text=Olá, quero comprar a carta Nyxsombra!" class="btn-comprar" target="_blank">Comprar</a>
-          </div>
-        </li>
-      </ul>
+    </div>
+  </div>
+
+  <!-- Modal Bootstrap -->
+  <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="modalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalTitle"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+
+        <div class="modal-body text-center">
+          <img id="modalImg" src="" alt="" class="img-fluid rounded mb-3" />
+          <p class="text-danger fs-5 fw-bold" id="modalPrice"></p>
+          <p id="modalDescription" class="text-body"></p>
+        </div>
+
+      </div>
+    </div>
+  </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
