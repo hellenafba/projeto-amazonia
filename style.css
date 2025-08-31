@@ -1,17 +1,18 @@
-.bg-success{
-    background-color: rgb(143, 70, 42) !important;
-    
+.bg-success {
+  background-color: rgb(143, 70, 42) !important;
+
 }
 
-body{
-    background-color: rgb(166, 128, 46);
+body {
+  background-color: rgb(166, 128, 46);
 }
-.card{
+
+.card {
   background-color: rgb(196, 173, 143);
-  
+
 }
 
-.listaproduto{
+.listaproduto {
   border-radius: 1.20%;
 }
 
@@ -22,9 +23,17 @@ body{
   /* opcional para quebrar linha automaticamente */
 }
 
-.col-3{
+.info {
+  padding: 30px;
+  margin: 0 auto;
+  max-width: 100%;
+  min-width: 320px;
+}
+
+.col-3 {
   flex: 1;
-  min-width: 200px; /* ou qualquer valor desejado */
+  min-width: 200px;
+  /* ou qualquer valor desejado */
 }
 
 
@@ -33,7 +42,13 @@ body{
   .container {
     flex-direction: column;
   }
+
   .col-3 {
     width: 100%;
   }
 }
+
+.modal-body {
+  background-color: blanchedalmond;
+}
+
